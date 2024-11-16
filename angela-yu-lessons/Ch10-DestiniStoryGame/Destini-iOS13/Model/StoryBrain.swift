@@ -64,6 +64,10 @@ struct StoryBrain {
         else {
             storyNumber = currentStory.choice2Destination
         }
+        
+        if storyNumber == stories.count {
+            storyNumber = 0
+        }
     }
     
 }
